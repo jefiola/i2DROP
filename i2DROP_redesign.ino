@@ -111,13 +111,13 @@ void loop() {
 
   static unsigned long lastPrint = 0;
   if (millis() - lastPrint > 10000) {
-    Serial.print("=== RINGKASAN === Sisa: ");
+    Serial.print("Sisa: ");
     Serial.print(volume_sekarang);
     Serial.print(" mL | Total tetes: ");
     Serial.print(totalTetes);
     Serial.print(" | Laju: ");
     Serial.print(tetesPerMenit);
-    Serial.println(" tpm");
+    Serial.println("TPM");
     lastPrint = millis();
   }
 
